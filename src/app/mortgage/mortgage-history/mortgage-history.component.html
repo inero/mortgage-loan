@@ -1,0 +1,46 @@
+<div class="p-grid">
+    <div class="p-col-2"></div>
+    <div class="p-col-8">
+        <div class="content-section implementation">
+            <div class="card">
+                <p-table #dt [value]="historyData" [rows]="5" [paginator]="true"
+                    [globalFilterFields]="['name','department','designation','status']" [rowHover]="true" dataKey="id"
+                    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+                    [showCurrentPageReport]="true">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th pSortableColumn="personal.name">Name <p-sortIcon field="name"></p-sortIcon>
+                            </th>
+                            <th pSortableColumn="personal.mobile">Mobile <p-sortIcon field="mobile"></p-sortIcon>
+                            </th>
+                            <!-- <th pSortableColumn="email">Email <p-sortIcon field="email"></p-sortIcon>
+                            </th> -->
+                            <th pSortableColumn="personal.sanctionedAmount">Amount <p-sortIcon field="amount"></p-sortIcon>
+                            </th>
+                            <th pSortableColumn="personal.EMITenure">Tenure <p-sortIcon field="tenure"></p-sortIcon>
+                            </th>
+                            <th pSortableColumn="personal.EMIAmount">EMI <p-sortIcon field="emi"></p-sortIcon>
+                            </th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-customer>
+                        <tr>
+                            <td>{{customer.personal.name}}</td>
+                            <td>{{customer.personal.mobile}}</td>
+                            <!-- <td>{{customer.personal.email}}</td> -->
+                            <td>{{customer.estimation.sanctionedAmount | currency:'INR':'symbol-narrow'}}</td>
+                            <td>{{customer.estimation.EMITenure}} ({{customer.estimation.EMITenure*12}})</td>
+                            <td>{{customer.estimation.EMIAmount | currency:'INR':'symbol-narrow'}}</td>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="summary">
+                        <div class="p-d-flex p-ai-center p-jc-between">
+                            In total there are {{historyData?.length || 0 }} records.
+                        </div>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+    </div>
+    <div class="p-col-2"></div>
+</div>

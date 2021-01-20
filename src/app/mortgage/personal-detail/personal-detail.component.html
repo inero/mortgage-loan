@@ -1,0 +1,78 @@
+<div class="stepsdemo-content">
+    <p-card>
+        <ng-template pTemplate="title">
+            Personal Information
+        </ng-template>
+        <ng-template pTemplate="subtitle">
+            Enter your personal information
+        </ng-template>
+        <ng-template pTemplate="content">
+            <div class="p-fluid">
+                <form [formGroup]="personalForm" novalidate>
+                    <p>
+                        <label for="name">First Name </label>
+                        <input type="text" id="name" pInputText name="name" formControlName="name">
+                    </p>
+                    <div *ngIf="!personalFormControl.name?.valid && (personalFormControl.name?.dirty || personalFormControl.name?.touched)">
+                        <div [hidden]="!personalFormControl.name?.errors?.required">
+                            Name is required
+                        </div>
+                    </div>
+                    <p>
+                        <label for="age">Age </label>
+                        <input type="number" id="age" pInputText name="age" formControlName="age">
+                    </p>
+                    <div *ngIf="!personalFormControl.age?.valid && (personalFormControl.age?.dirty || personalFormControl.age?.touched)">
+                        <div [hidden]="!personalFormControl.age?.errors?.required">
+                            Age is required
+                        </div>
+                    </div>
+                    <p>
+                        <label for="email">Email </label>
+                        <input type="text" id="email" pInputText name="email" formControlName="email">
+                    </p>
+                    <div *ngIf="!personalFormControl.email?.valid && (personalFormControl.email?.dirty || personalFormControl.email?.touched)">
+                        <div [hidden]="!personalFormControl.email?.errors?.required">
+                            Email is required
+                        </div>
+                        <div [hidden]="!personalFormControl.email?.errors?.email">
+                            Enter valid email address
+                        </div>
+                    </div>
+                    <p>
+                        <label for="mobile">Mobile </label>
+                        <input type="text" id="mobile" pInputText name="mobile" formControlName="mobile">
+                    </p>
+                    <div *ngIf="!personalFormControl.mobile?.valid && (personalFormControl.mobile?.dirty || personalFormControl.mobile?.touched)">
+                        <div [hidden]="!personalFormControl.mobile?.errors?.required">
+                            Mobile Number is required
+                        </div>
+                    </div>
+                    <div formGroupName="address">
+                        <div class="form-group">
+                            <label for="street">Street</label>
+                            <input type="text" class="form-control" pInputText name="street" formControlName="street">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" pInputText name="city" formControlName="city">
+                        </div>
+                        <div class="form-group">
+                            <label for="pincode">Pin Code</label>
+                            <input type="text" class="form-control" pInputText name="pincode" formControlName="pincode">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">country</label>
+                            <input type="text" class="form-control" pInputText name="country" formControlName="country">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <div class="p-grid p-nogutter p-justify-end">
+                <p-button label="Next" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right"></p-button>
+            </div>
+        </ng-template>
+    </p-card>
+</div>

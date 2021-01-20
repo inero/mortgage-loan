@@ -1,0 +1,202 @@
+{
+  "mortgage": [],
+  "history": [
+    {
+      "id": "IOM8A",
+      "personal": {
+        "name": "David",
+        "email": "david@gmail.com",
+        "age": 32,
+        "mobile": "9875432111",
+        "address": {
+          "city": "City",
+          "street": "Street 1",
+          "pincode": "432432",
+          "country": "India"
+        }
+      },
+      "loan": {
+        "amount": "800000",
+        "tenure": 5,
+        "occupation": "Employed",
+        "monthlyIncome": "100000",
+        "monthlyEMI": "3000"
+      },
+      "property": {
+        "propertySize": "1200",
+        "propertyType": 2,
+        "propertyArea": 2
+      },
+      "estimation": {
+        "mortgageValue": 1920000,
+        "sanctionedAmount": "800000",
+        "offeringAmount": 1920000,
+        "eligiblility": true,
+        "EMIAmount": 13333.333333333334,
+        "EMITenure": 5
+      }
+    },
+    {
+      "id": "6TJVT",
+      "personal": {
+        "name": "Kevin",
+        "email": "kevin@gmail.com",
+        "age": 23,
+        "mobile": "9876543210",
+        "address": {
+          "city": "city",
+          "street": "street",
+          "pincode": "987654",
+          "country": "India"
+        }
+      },
+      "loan": {
+        "amount": 600000,
+        "tenure": 6,
+        "monthlyIncome": 80000,
+        "monthlyEMI": null
+      },
+      "property": {
+        "propertySize": 900,
+        "propertyAge": 1
+      },
+      "estimation": {
+        "mortgageValue": 720000,
+        "sanctionedAmount": 600000,
+        "offeringAmount": 720000,
+        "eligiblility": true,
+        "EMIAmount": 8333.333333333334,
+        "EMITenure": 6
+      }
+    },
+    {
+      "id": "KO9TR",
+      "personal": {
+        "name": "John",
+        "email": "john@gmail.com",
+        "age": 34,
+        "mobile": "9887655432",
+        "address": {
+          "city": "city",
+          "street": "street",
+          "pincode": "232323",
+          "country": "India"
+        }
+      },
+      "loan": {
+        "amount": 1200000,
+        "tenure": 10,
+        "monthlyIncome": 100000,
+        "monthlyEMI": 40000
+      },
+      "property": {
+        "propertySize": 1000
+      },
+      "estimation": {
+        "mortgageValue": 800000,
+        "sanctionedAmount": 800000,
+        "offeringAmount": 0,
+        "eligiblility": false,
+        "EMIAmount": 6666.666666666667,
+        "EMITenure": 10
+      }
+    },
+    {
+      "id": "UT4PM",
+      "personal": {
+        "name": "Kirubha",
+        "email": "kirubha@gmail.com",
+        "age": 23,
+        "mobile": "9876543111",
+        "address": {
+          "city": "city",
+          "street": "street",
+          "pincode": "232323",
+          "country": "India"
+        }
+      },
+      "loan": {
+        "amount": 300000,
+        "tenure": 3,
+        "occupation": 2,
+        "monthlyIncome": 40000,
+        "monthlyEMI": 20000
+      },
+      "property": {
+        "propertySize": 600
+      },
+      "estimation": {
+        "mortgageValue": 480000,
+        "sanctionedAmount": 300000,
+        "offeringAmount": 480000,
+        "eligiblility": true,
+        "EMIAmount": 8333.333333333334,
+        "EMITenure": 3
+      }
+    },
+    {
+      "id": "FY8CS",
+      "personal": {
+        "name": "Martin",
+        "email": "martin@gmail.com",
+        "age": 30,
+        "mobile": "9876543212",
+        "address": {
+          "city": "city",
+          "street": "street",
+          "pincode": "987545",
+          "country": "India"
+        }
+      },
+      "loan": {
+        "amount": 1000000,
+        "tenure": 5,
+        "monthlyIncome": 60000,
+        "monthlyEMI": 20000
+      },
+      "property": {
+        "propertySize": 800
+      },
+      "estimation": {
+        "mortgageValue": 640000,
+        "sanctionedAmount": 640000,
+        "offeringAmount": 0,
+        "eligiblility": false,
+        "EMIAmount": 10666.666666666666,
+        "EMITenure": 5
+      }
+    },
+    {
+      "id": "3BCGR",
+      "personal": {
+        "name": "Immanuel",
+        "email": "imman@gmail.com",
+        "age": 33,
+        "mobile": "9876543211",
+        "address": {
+          "city": "city",
+          "street": "street",
+          "pincode": "655432",
+          "country": "India"
+        }
+      },
+      "loan": {
+        "amount": 1400000,
+        "tenure": 5,
+        "monthlyIncome": 80000
+      },
+      "property": {
+        "propertySize": 1200,
+        "propertyType": 2
+      },
+      "estimation": {
+        "mortgageValue": 960000,
+        "sanctionedAmount": 960000,
+        "offeringAmount": 0,
+        "eligiblility": false,
+        "EMIAmount": 16000,
+        "EMITenure": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<div class="stepsdemo-content">
+    <p-card>
+        <ng-template pTemplate="title">
+            Loan Information
+        </ng-template>
+        <ng-template pTemplate="subtitle">
+            Enter your loan information
+        </ng-template>
+        <ng-template pTemplate="content">
+            <div class="p-fluid">
+                <form [formGroup]="loanForm" novalidate>
+                    <p>
+                        <label for="amount">Expected Loan Amount </label>
+                        <input type="number" id="amount" pInputText name="amount" formControlName="amount">
+                    </p>
+                    <p>
+                        <label for="tenure">Tenure (in Years)</label>
+                        <input type="number" id="tenure" pInputText name="tenure" formControlName="tenure">
+                    </p>
+                    <p>
+                        <label for="occupation">Occupation </label>
+                        <p-dropdown [options]="occupationOptions" optionLabel="value" optionValue="code" formControlName="occupation"></p-dropdown>
+                    </p>
+                    <p>
+                        <label for="monthlyIncome">Monthly Income </label>
+                        <input type="number" id="monthlyIncome" pInputText name="monthlyIncome" formControlName="monthlyIncome">
+                    </p>
+                    <p>
+                        <label for="monthlyEMI">Monthly EMI (Existing if any)</label>
+                        <input type="number" id="monthlyEMI" pInputText name="monthlyEMI" formControlName="monthlyEMI">
+                    </p>
+                </form>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <div class="p-grid p-nogutter p-justify-between">
+                <p-button label="Back" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button>
+                <p-button label="Next" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right"></p-button>
+            </div>
+        </ng-template>
+    </p-card>
+</div>

@@ -1,0 +1,38 @@
+<div class="stepsdemo-content">
+    <p-card>
+        <ng-template pTemplate="title">
+            Property Detail
+        </ng-template>
+        <ng-template pTemplate="subtitle">
+            Enter your property information
+        </ng-template>
+        <ng-template pTemplate="content">
+            <div class="p-fluid">
+                <form [formGroup]="propertyForm" novalidate>
+                    <p>
+                        <label for="propertySize">Property Size </label>
+                        <input type="number" id="propertySize" pInputText name="propertySize" formControlName="propertySize">
+                    </p>
+                    <p>
+                        <label for="propertyType">Property Type </label>
+                        <p-dropdown [options]="type" optionLabel="value" optionValue="code" formControlName="propertyType"></p-dropdown>
+                    </p>
+                    <p>
+                        <label for="propertyArea">Property Area </label>
+                        <p-dropdown [options]="area" optionLabel="area" optionValue="code" formControlName="propertyArea"></p-dropdown>
+                    </p>
+                    <p>
+                        <label for="propertyAge">Property Age </label>
+                        <p-dropdown [options]="age" optionLabel="value" optionValue="code" formControlName="propertyAge"></p-dropdown>
+                    </p>
+                </form>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <div class="p-grid p-nogutter p-justify-between">
+                <p-button label="Back" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button>
+                <p-button label="Next" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right"></p-button>
+            </div>
+        </ng-template>
+    </p-card>
+</div>
